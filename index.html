@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>Donation Reconciler (Local)</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.1/build/stlite.css"/>
+    <!-- Updated to @latest -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/mountable@latest/build/stlite.css"/>
   </head>
   <body>
     <div id="root"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.1/build/stlite.js"></script>
+    <!-- Updated to @latest -->
+    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@latest/build/stlite.js"></script>
     <script>
       stlite.mount(
         {
-          requirements: ["pandas", "openpyxl", "xlrd"], // Loads these into the browser!
+          requirements: ["pandas", "openpyxl", "xlrd"],
           entrypoint: "app.py",
           files: {
             "app.py": {
-              url: "./app.py",
+              url: "app.py",
             },
           },
         },
